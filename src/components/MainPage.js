@@ -9,6 +9,11 @@ const MainPage = () => {
           <Circle>
             <Title>Finished a Bottle!</Title>
           </Circle>
+          <TripleCircleContainer>
+            <Circle size="30px" />
+            <Circle size="30px" />
+            <Circle size="30px" />
+          </TripleCircleContainer>
         </MainPageContent>
       </MainPageContainer>
     </>
@@ -45,8 +50,8 @@ export const MainPageContainer = styled.div`
 
 export const MainPageContent = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 0.5rem calc((100vw - 1300px) / 2);
   z-index: 10;
   height: 100vh;
@@ -54,10 +59,11 @@ export const MainPageContent = styled.div`
 `;
 
 export const Circle = styled.div`
+  display: flex;
   border: 2px #000 solid;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: ${({ size }) => (size ? size : "300px")};
+  height: ${({ size }) => (size ? size : "300px")};
 `;
 
 export const Title = styled.h1`
@@ -67,4 +73,11 @@ export const Title = styled.h1`
   color: #000;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+`;
+
+export const TripleCircleContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 `;

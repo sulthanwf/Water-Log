@@ -23,15 +23,17 @@ const MainPage = () => {
 export default MainPage;
 
 export const MainPageContainer = styled.div`
+  grid-area: main;
   background: none;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100vw;
   padding: 0 1rem;
   color: #fff;
 
-  ::before {
+  /* ::before {
     content: "";
     position: absolute;
     top: 0;
@@ -45,7 +47,7 @@ export const MainPageContainer = styled.div`
         rgba(0, 0, 0, 0.2) 0%
       ),
       linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-  }
+  } */
 `;
 
 export const MainPageContent = styled.div`

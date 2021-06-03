@@ -1,13 +1,13 @@
 import Navbar from "./components/Navbar";
-import MainPage from "./components/MainPage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
-        <MainPage />
+        <Home />
       </Router>
     </div>
   );

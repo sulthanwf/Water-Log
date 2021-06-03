@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <>
       <HomeContainer>
-        <StatsPage />
         <MainPage />
+        <StatsPage />
         <BottleInfoPage />
       </HomeContainer>
     </>

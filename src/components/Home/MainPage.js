@@ -2,19 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 const MainPage = () => {
+  const handleClick = () => {
+    console.log("Finished a bottle!");
+  };
+
   return (
     <>
       <MainPageContainer>
         <MainPageContent>
-          <Circle>
+          <Circle onClick={handleClick}>
             <Title>Finished a Bottle!</Title>
           </Circle>
-          <TripleCircleContainer>
-            <Circle size="30px" />
-            <Circle size="30px" />
-            <Circle size="30px" />
-          </TripleCircleContainer>
         </MainPageContent>
+        <TripleCircleContainer>
+          <Circle size="20px" />
+          <Circle size="20px" />
+          <Circle size="20px" />
+        </TripleCircleContainer>
       </MainPageContainer>
     </>
   );
@@ -24,11 +28,11 @@ export default MainPage;
 
 export const MainPageContainer = styled.div`
   grid-area: main;
-  background: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   padding: 0 1rem;
   color: #fff;
@@ -60,8 +64,10 @@ export const MainPageContent = styled.div`
   place-items: center;
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.span`
   display: flex;
+  transition: background-color 0.6s ease;
+  cursor: pointer;
   border: 2px #000 solid;
   border-radius: 50%;
   width: ${({ size }) => (size ? size : "300px")};
@@ -80,6 +86,8 @@ export const Title = styled.h1`
 export const TripleCircleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 150px;
   justify-content: space-around;
+  position: absolute;
+  bottom: 15%;
 `;

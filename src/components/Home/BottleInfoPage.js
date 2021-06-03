@@ -33,4 +33,12 @@ export const BottleInfoContanier = styled.div`
   color: #000;
 `;
 
-export const BottleInfoContent = styled.div``;
+export const BottleInfoContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem calc((100vw - 1300px) / 2);
+  z-index: 10;
+  height: 100vh;
+  place-items: center;
+`;

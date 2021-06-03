@@ -33,4 +33,12 @@ export const StatsContainer = styled.div`
   color: #fff;
 `;
 
-export const StatsContent = styled.div``;
+export const StatsContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem calc((100vw - 1300px) / 2);
+  z-index: 10;
+  height: 100vh;
+  place-items: center;
+`;

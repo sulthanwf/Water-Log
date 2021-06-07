@@ -9,11 +9,11 @@ const StatsPage = () => {
         <StatsContent>
           <Title>Statistic Page</Title>
         </StatsContent>
-        <TripleCircleContainer>
+        {/* <TripleCircleContainer>
           <Circle size="20px" />
           <Circle size="20px" />
           <Circle size="20px" />
-        </TripleCircleContainer>
+        </TripleCircleContainer> */}
       </StatsContainer>
     </>
   );

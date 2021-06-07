@@ -9,11 +9,11 @@ const BottleInfoPage = () => {
         <BottleInfoContent>
           <Title>Bottle Info Page</Title>
         </BottleInfoContent>
-        <TripleCircleContainer>
+        {/* <TripleCircleContainer>
           <Circle size="20px" />
           <Circle size="20px" />
           <Circle size="20px" />
-        </TripleCircleContainer>
+        </TripleCircleContainer> */}
       </BottleInfoContanier>
     </>
   );

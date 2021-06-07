@@ -14,11 +14,11 @@ const MainPage = () => {
             <Title>Finished a Bottle!</Title>
           </Circle>
         </MainPageContent>
-        <TripleCircleContainer>
+        {/* <TripleCircleContainer>
           <Circle size="20px" />
           <Circle size="20px" />
           <Circle size="20px" />
-        </TripleCircleContainer>
+        </TripleCircleContainer> */}
       </MainPageContainer>
     </>
   );
@@ -81,13 +81,4 @@ export const Title = styled.h1`
   color: #000;
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
-`;
-
-export const TripleCircleContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  width: 150px;
-  justify-content: space-around;
-  position: absolute;
-  bottom: 15%;
 `;

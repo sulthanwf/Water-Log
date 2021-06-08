@@ -5,6 +5,10 @@ import MainPage, { Circle } from "./MainPage";
 import StatsPage from "./StatsPage";
 
 const Home = () => {
+  const handleClick = () => {
+    console.log("Finished a bottle!");
+  };
+
   return (
     <>
       <HomeContainer>
@@ -12,9 +16,9 @@ const Home = () => {
         {/* <StatsPage />
         <BottleInfoPage /> */}
         <TripleCircleContainer>
-          <Circle size="20px" />
-          <Circle size="20px" />
-          <Circle size="20px" />
+          <Circle size="20px" onClick={handleClick} />
+          <Circle size="20px" onClick={handleClick} />
+          <Circle size="20px" onClick={handleClick} />
         </TripleCircleContainer>
       </HomeContainer>
     </>
@@ -36,4 +40,5 @@ export const TripleCircleContainer = styled.div`
   justify-content: space-around;
   position: absolute;
   bottom: 15%;
+  z-index: 11;
 `;

@@ -22,12 +22,12 @@ const BottleInfoPage = () => {
 export default BottleInfoPage;
 
 export const BottleInfoContanier = styled.div`
+  scroll-snap-align: start;
   grid-area: bottle;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
   padding: 0 1rem;
   color: #000;

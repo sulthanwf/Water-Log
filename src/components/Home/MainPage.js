@@ -27,12 +27,12 @@ const MainPage = () => {
 export default MainPage;
 
 export const MainPageContainer = styled.div`
+  scroll-snap-align: start;
   grid-area: main;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
   padding: 0 1rem;
   color: #fff;

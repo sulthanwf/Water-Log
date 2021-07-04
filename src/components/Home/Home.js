@@ -13,8 +13,8 @@ const Home = () => {
     <>
       <HomeContainer>
         <MainPage />
-        {/* <StatsPage />
-        <BottleInfoPage /> */}
+        <StatsPage />
+        <BottleInfoPage />
         <TripleCircleContainer>
           <Circle size="20px" onClick={handleClick} />
           <Circle size="20px" onClick={handleClick} />
@@ -30,6 +30,9 @@ export default Home;
 export const HomeContainer = styled.div`
   display: grid;
   grid-template-areas: "stats main bottle";
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: hidden;
 `;
 
 export const TripleCircleContainer = styled.div`

@@ -23,14 +23,14 @@ export default StatsPage;
 
 export const StatsContainer = styled.div`
   grid-area: stats;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 100vw;
   padding: 0 1rem;
   color: #fff;
+  scroll-snap-align: start;
 `;
 
 export const StatsContent = styled.div`
